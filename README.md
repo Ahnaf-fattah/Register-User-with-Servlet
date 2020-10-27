@@ -9,7 +9,7 @@ Dependecies
 How run this Src Code?
 - Untuk menjalankan web Ini, packaging harus di rubah ke WAR (Web Archive), default di POM itu JAR,
 - Gunakan web server Tomcat / Jetty / undertow untuk menajalankan source code Ini pada browser
-- Jika Tidak ingin ribet, Gunakan Embedeed web server dengan menambahkan : 
+- Jika Tidak ingin ribet, Gunakan Embedeed web server dengan menambahkan dengan menambahkan file XML di POM.XML
 '<build>
     <plugins>
 
@@ -26,3 +26,4 @@ How run this Src Code?
     </plugins>
   </build>
 '
+- untuk melakukan packaging gunakan perintah 'mvn clean install' agar dapat menghasilkan file packaging WAR di folder TARGET
